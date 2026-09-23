@@ -1,10 +1,9 @@
 INVITACIÓN DIGITAL · ARACELI
 
-1. Para conectar el formulario, abre config.js y pega el enlace público de Google Forms entre las comillas. Ejemplo:
-   window.INVITACION_FORM_URL = "https://forms.gle/tu-enlace";
+La página 7 contiene dos botones activos: WhatsApp al 81 1798 0813 y el formulario de Google proporcionado. La página 8 es el cierre de la invitación.
 
-2. Sube a un repositorio de GitHub el archivo index.html, style.css, config.js y la carpeta assets completa. Conserva los nombres y la estructura.
+Para actualizar la página publicada, sube index.html, style.css y la carpeta assets completa a la raíz de tu repositorio de GitHub. Puedes borrar config.js del repositorio porque esta versión ya tiene el enlace del formulario integrado.
 
-3. En GitHub abre Settings > Pages. En Build and deployment elige Deploy from a branch, selecciona main y / (root), y guarda. La dirección aparecerá en esa misma pantalla después de publicarse.
+Para activar GitHub Pages: Settings > Pages > Deploy from a branch > main > / (root) > Save.
 
-La invitación conserva las ocho imágenes originales y añade una última página para el formulario. El botón del formulario aparece en cuanto configures una dirección válida de Google Forms. Los datos de ubicación y WhatsApp presentes en las imágenes son enlaces activos.
+La música comienza al tocar «Toca aquí para comenzar». El botón flotante permite pausarla y reanudarla. Sube también assets/musica.mp3.

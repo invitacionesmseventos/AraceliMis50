@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10100e">
+  <meta name="description" content="Invitación a los 50 años de Araceli. 24 de octubre de 2026, 7:00 p. m.">
+  <title>Mis 50 años · Araceli</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='13' fill='%2310100e'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='serif' font-size='36' fill='%23dec47e'%3E50%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="inicio">
+    <h1 class="sr-only">Invitación a los 50 años de Araceli</h1>
+    <div class="slides">
+      <section class="slide"><img src="assets/1.png" alt="Mis 50 años. Araceli. 24 de octubre de 2026 a partir de las 7:00 p. m." fetchpriority="high"></section>
+      <section class="slide"><img src="assets/2.png" alt="Celebremos juntos. Hay momentos que se atesoran para siempre y llegar a mis 50 años es uno de ellos." loading="lazy"></section>
+      <section class="slide"><img src="assets/3.png" alt="Acompáñame a celebrar el sábado 24 de octubre a partir de las 7:00 p. m." loading="lazy"></section>
+      <section class="slide location"><img src="assets/4.png" alt="Ubicación: Rincón del Country Eventos, avenida Eugenio Garza Sada número 4926, colonia Sierra Ventana, Monterrey, Nuevo León." loading="lazy"><a class="overlay-link map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Rinc%C3%B3n%20del%20Country%20Eventos%2C%20Av.%20Eugenio%20Garza%20Sada%204926%2C%20Monterrey%2C%20Nuevo%20Le%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="Abrir ubicación de Rincón del Country Eventos en Google Maps"></a></section>
+      <section class="slide"><img src="assets/5.png" alt="Código de vestimenta: elegante casual. Elige tu mejor look en tonos oscuros. El dorado queda reservado para la cumpleañera." loading="lazy"></section>
+      <section class="slide"><img src="assets/6.png" alt="Tu presencia es el mejor regalo. Si deseas tener un detalle conmigo, puedes elegir entre un regalito o un sobre." loading="lazy"></section>
+      <section class="slide whatsapp"><img src="assets/7.png" alt="Confirma tu asistencia por WhatsApp al 81 1798 0813." loading="lazy"><a class="overlay-link whatsapp-link" href="https://wa.me/528117980813?text=Hola%2C%20confirmo%20mi%20asistencia%20a%20tus%2050%20a%C3%B1os." target="_blank" rel="noopener noreferrer" aria-label="Confirmar asistencia por WhatsApp"></a></section>
+      <section class="slide"><img src="assets/8.png" alt="Te espero para compartir una noche inolvidable. Araceli, 24 de octubre de 2026. ¡No faltes!" loading="lazy"></section>
+      <section class="slide final-slide" id="confirmar">
+        <div class="final-card">
+          <div class="stars" aria-hidden="true">✦ · ✧ · ✦</div>
+          <span class="eyebrow">CONFIRMA TU ASISTENCIA</span>
+          <div class="portrait"><img src="assets/7.png" alt="Araceli" loading="lazy"></div>
+          <h2>¿Nos acompañas?</h2>
+          <p>Me encantará celebrar mis 50 años contigo. Confirma tu asistencia en el formulario.</p>
+          <a id="form-link" class="form-button" href="#confirmar" hidden>Confirmar en el formulario ↗</a>
+          <p id="form-pending" class="pending">El enlace del formulario estará disponible próximamente.</p>
+          <small>24 · OCTUBRE · 2026</small>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="config.js"></script>
+  <script>
+    const formURL = window.INVITACION_FORM_URL;
+    if (typeof formURL === 'string' && /^https:\/\/(docs\.google\.com\/forms\/|forms\.gle\/)/i.test(formURL)) {
+      const link = document.getElementById('form-link');
+      link.href = formURL;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.hidden = false;
+      document.getElementById('form-pending').hidden = true;
+    }
+  </script>
+</body>
+</html>

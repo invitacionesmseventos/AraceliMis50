@@ -7,3 +7,5 @@ Para actualizar la página publicada, sube index.html, style.css y la carpeta as
 Para activar GitHub Pages: Settings > Pages > Deploy from a branch > main > / (root) > Save.
 
 La música comienza al tocar «Toca aquí para comenzar». El botón flotante permite pausarla y reanudarla. Sube también assets/musica.mp3.
+
+Versión ligera para datos móviles: imágenes WebP y música comprimida. Reemplaza también la carpeta assets completa y elimina las imágenes PNG antiguas del repositorio para evitar confusiones.
